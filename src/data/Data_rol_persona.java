@@ -34,16 +34,16 @@ public class Data_rol_persona {
             }
 		}
 	}
-	public void update_rol_persona(Persona per, HashMap<Integer, Rol>roles) {
+	/*public void update_rol_persona(Persona per, HashMap<Integer, Rol>roles) {
 		PreparedStatement stmt = null;
 		try {
 			
 			stmt=DbConnector.getInstancia().getConn().prepareStatement("delete from rol_persona where id_persona = ?");
 			stmt.setInt(1, per.getId());
 			stmt.executeUpdate();
-			//no realiza el delete de los roles que no se necesitan
 			
-			this.add_rol_persona(per, roles);
+			
+			//this.add_rol_persona(per, roles);
 			
 		}catch(SQLException e) {
 			e.printStackTrace();
@@ -55,7 +55,7 @@ public class Data_rol_persona {
 				e.printStackTrace();
 			}
 		}
-	}
+	}*/
 	public void delete_rol_persona(Persona per) {
 		PreparedStatement stmt = null;
 		ResultSet rs = null;

@@ -242,7 +242,9 @@ public class DataPersona {
 			stmt.setInt(9, per.getId());
 			stmt.executeUpdate();
 			
-			drp.update_rol_persona(per, roles);
+			//drp.update_rol_persona(per, roles);
+			drp.delete_rol_persona(per);
+			drp.add_rol_persona(per, roles);
 			
 		}catch (SQLException e) {
             e.printStackTrace();
